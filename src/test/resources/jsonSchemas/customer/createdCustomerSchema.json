@@ -1,0 +1,153 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "id",
+    "group_id",
+    "created_at",
+    "updated_at",
+    "created_in",
+    "email",
+    "firstname",
+    "lastname",
+    "store_id",
+    "website_id",
+    "addresses",
+    "disable_auto_group_change",
+    "extension_attributes"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "default": 0,
+      "examples": [
+        630009610
+      ]
+    },
+    "group_id": {
+      "$id": "#/properties/group_id",
+      "type": "integer",
+      "title": "The Group_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The Created_at Schema",
+      "default": "",
+      "examples": [
+        "2019-12-31 11:16:56"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "updated_at": {
+      "$id": "#/properties/updated_at",
+      "type": "string",
+      "title": "The Updated_at Schema",
+      "default": "",
+      "examples": [
+        "2019-12-31 11:16:56"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "created_in": {
+      "$id": "#/properties/created_in",
+      "type": "string",
+      "title": "The Created_in Schema",
+      "default": "",
+      "examples": [
+        "USA"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The Email Schema",
+      "default": "",
+      "examples": [
+        "testGVv@gorillagroup.com"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "firstname": {
+      "$id": "#/properties/firstname",
+      "type": "string",
+      "title": "The Firstname Schema",
+      "default": "",
+      "examples": [
+        "Test"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "lastname": {
+      "$id": "#/properties/lastname",
+      "type": "string",
+      "title": "The Lastname Schema",
+      "default": "",
+      "examples": [
+        "Rest Assured"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "store_id": {
+      "$id": "#/properties/store_id",
+      "type": "integer",
+      "title": "The Store_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "website_id": {
+      "$id": "#/properties/website_id",
+      "type": "integer",
+      "title": "The Website_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "addresses": {
+      "$id": "#/properties/addresses",
+      "type": "array",
+      "title": "The Addresses Schema"
+    },
+    "disable_auto_group_change": {
+      "$id": "#/properties/disable_auto_group_change",
+      "type": "integer",
+      "title": "The Disable_auto_group_change Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "extension_attributes": {
+      "$id": "#/properties/extension_attributes",
+      "type": "object",
+      "title": "The Extension_attributes Schema",
+      "required": [
+        "is_subscribed"
+      ],
+      "properties": {
+        "is_subscribed": {
+          "$id": "#/properties/extension_attributes/properties/is_subscribed",
+          "type": "boolean",
+          "title": "The Is_subscribed Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    }
+  }
+}
